@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="hwg.bachelor.routesservice.RoutesServiceApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-11T21:38:45" hostname="DESKTOP-QKA68NB" time="0.484">
+  <properties/>
+  <testcase name="contextLoads()" classname="hwg.bachelor.routesservice.RoutesServiceApplicationTests" time="0.484"/>
+  <system-out><![CDATA[22:38:41.210 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [hwg.bachelor.routesservice.RoutesServiceApplicationTests]: RoutesServiceApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+22:38:41.367 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration hwg.bachelor.routesservice.RoutesServiceApplication for test class hwg.bachelor.routesservice.RoutesServiceApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.0)
+
+2024-12-11T22:38:41.764+01:00  INFO 20988 --- [routes-service] [    Test worker] h.b.r.RoutesServiceApplicationTests      : Starting RoutesServiceApplicationTests using Java 17.0.12 with PID 20988 (started by Ali in D:\Bachelor\Projekt\FastBus-Microservice\routes-service)
+2024-12-11T22:38:41.766+01:00  INFO 20988 --- [routes-service] [    Test worker] h.b.r.RoutesServiceApplicationTests      : No active profile set, falling back to 1 default profile: "default"
+2024-12-11T22:38:42.553+01:00  INFO 20988 --- [routes-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-11T22:38:42.617+01:00  INFO 20988 --- [routes-service] [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 2 JPA repository interfaces.
+2024-12-11T22:38:43.070+01:00  INFO 20988 --- [routes-service] [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-11T22:38:43.133+01:00  INFO 20988 --- [routes-service] [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-11T22:38:43.168+01:00  INFO 20988 --- [routes-service] [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-11T22:38:43.466+01:00  INFO 20988 --- [routes-service] [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-11T22:38:43.501+01:00  INFO 20988 --- [routes-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-11T22:38:43.718+01:00  INFO 20988 --- [routes-service] [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@1da5c19d
+2024-12-11T22:38:43.721+01:00  INFO 20988 --- [routes-service] [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-11T22:38:43.821+01:00  WARN 20988 --- [routes-service] [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-12-11T22:38:43.848+01:00  INFO 20988 --- [routes-service] [    Test worker] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 16.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-11T22:38:44.651+01:00  INFO 20988 --- [routes-service] [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-11T22:38:44.822+01:00  INFO 20988 --- [routes-service] [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-11T22:38:45.347+01:00  WARN 20988 --- [routes-service] [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-11T22:38:45.807+01:00  INFO 20988 --- [routes-service] [    Test worker] h.b.r.RoutesServiceApplicationTests      : Started RoutesServiceApplicationTests in 4.296 seconds (process running for 5.465)
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+Hibernate: select r1_0.route_id,r1_0.departure,r1_0.destination,r1_0.duration,r1_0.price from fastbusroutes.busroutes r1_0 where r1_0.route_id=?
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
